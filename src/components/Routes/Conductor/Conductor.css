@@ -1,0 +1,303 @@
+.CNDT
+{
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: rgba(0,0,0,0.65) url('../../../logos/ConductorBack.png');
+    background-repeat: repeat-y;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    /* background: rgba(0,0,0,0.8) url('../../logos/Homeback.jpg'); */
+    background-blend-mode: darken;
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    background-size: cover;
+}
+
+.CNDT-content
+{
+    margin-top: 50px;
+    margin-left: 100px;
+    display: flex;
+}
+
+.CNDT-left
+{
+    margin-left: -80px;
+    margin-right: 50px;
+
+}
+.CNDT-content h2
+{
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 15px;
+
+}
+.CNDT-Message
+{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+
+.CNDT-Message h2:last-child
+{
+    color: #bb0052;
+}
+
+.input-code:focus
+{
+    outline: none;
+}
+.input-code
+{
+    margin-top: 20px;
+    height: 30px;
+    padding: 3px;
+    font-size: 16px;
+    width: 120px;
+    font-weight: bolder;
+    letter-spacing: 18px;
+}
+
+
+.CNDT-create-ticket
+{
+
+}
+
+.srcinp p{
+
+    color: grey;
+    /* font-size: 30px; */
+    font-weight: bold;
+    margin: 0;
+    margin-top: 5px;
+}
+
+.srcinp img
+{
+    height: 40px;
+    filter: grayscale(100%);
+    /* width: 40px; */
+}
+.srcinp
+{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    background-color: white;
+    padding: 10px;
+}
+
+.inpselect
+{
+    display: flex;
+}
+
+.input-price:focus 
+{
+    outline: none;
+}
+.input-price::placeholder
+{
+    text-align: center;
+}
+.input-price
+{
+    height: 50px;
+    border: none;
+    /* margin-top: 20px; */
+    text-align: center;
+    font-size: 20px;
+    margin: 0 20px;
+    font-weight: bold;
+}
+.input-source:focus
+{
+    /* outline: none; */
+    
+}
+
+
+.input-source::placeholder
+{
+    
+    background-color: transparent;
+}
+
+.input-source
+{
+    height: 50%;
+    border: none;
+    margin-top: 16px;
+    /* margin-left: -40px; */
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    /* width: 150%; */
+    color: blue;
+    /* opacity: 0.7; */
+}
+
+
+#dropdown 
+{
+    color: grey;
+    font-weight: bold;
+    font-size: 16px;
+    border: transparent;
+    background-color: transparent;
+    margin: 17px 0;
+    text-align: center;
+}
+
+/* Generic css */
+
+.flexc
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.flexr
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.fcenter
+{
+    justify-content: center;
+    align-items: center;
+}
+
+.margin20
+{
+    margin: 20px;
+}
+
+
+.nooft
+{
+    margin: 0px 20px;
+    width: 180px;
+}
+
+.nooft h2
+{
+    background-color: #bb0052;
+    color: white;
+    border: none;
+    /* padding: 5px; */
+  font-size: 20px;
+  height: 40px;
+  width: 40px;
+  /* width: 180px; */
+  border-radius: 100px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 40px;
+  font-weight: bolder;
+  cursor: pointer;
+  margin: 0px 15px;
+}
+
+.nooft h1
+{
+    font-size: 18px;
+    margin: 0px;
+    height: 40px;
+    vertical-align: middle;
+    line-height: 40px;
+
+}
+
+.btns
+{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;    
+}
+
+
+.cnfmtct
+{
+    line-height: 50px;
+    width: 150px;
+    height: 50px;
+    margin: 0px 20px;
+    vertical-align: middle;
+    text-align: center;
+    background-color: green;
+    cursor: pointer;
+}
+
+.show
+{
+    display: block;
+}
+.hide
+{
+    display: none;
+}
+
+
+/* Profie */
+
+
+.CProfile
+{
+    display: flex;
+}
+
+.c-buttons
+{
+    display: flex;
+}
+
+.c-photo
+{
+    margin: 
+    40px;
+}
+.c-photo img
+{
+    height: 230px;
+    border-radius: 30px;
+    box-shadow: rgba(88, 0, 252, 0.849) 0px 5px 15px;
+}
+
+@media only screen and (max-width: 600px) {
+
+ 
+
+    .CNDT-content
+    {
+        margin-left: 0;
+        zoom:0.8;
+        flex-direction: column;
+    }
+
+    .CNDT-left
+    {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .booking-content
+    {
+        margin-top: 40px;
+        zoom: 0.85;
+        margin-left: 5%;
+    }
+    .CProfile,.c-buttons
+{
+flex-direction: column;
+justify-content: center;
+align-items: center;}
+
+}

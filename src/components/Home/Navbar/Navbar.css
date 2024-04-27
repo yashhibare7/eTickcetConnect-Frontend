@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+html
+{
+
+  scroll-behavior: smooth;
+}
+body
+{
+  /* background-color: #4d4d4d; */
+  /* color: white; */
+  /* overflow-x: hidden;   */
+  padding: 0;
+  margin: 0;
+}
+/* Navbar.css */
+a
+{
+  text-decoration: none;
+  /* color: white; */
+  font-family: 'Times New Roman', Times, serif;
+}
+.navbar {
+  z-index: 100;
+    background-color: transparent;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3 ); */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    transition: transform 0.3s ease-in-out;
+    height: 55px;
+
+    /* background: ; */
+
+
+  }
+  
+.navbar-landing {
+ 
+  z-index: 100;
+    background-color: transparent;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    transition: transform 0.3s ease-in-out;
+    height: 55px;
+  }
+  
+  .scroll-bg {
+    background-color: #EEE6EC !important;
+  }
+  
+
+
+  .logo a img{
+    text-decoration: none;
+    color: white;
+    height: 40px;
+  }
+  
+  .logo-login a img{
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    height: 40px;
+  }
+
+  .logo-login a
+  {
+    display: flex;
+    justify-content: center;
+    margin-top:40px ;
+  }
+  
+  .menu {
+    display: flex;
+    align-items: center;
+    /* margin-right: 20px; */
+  }
+  
+  .menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-right: 30px;
+  }
+  
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 3px 0;
+  }
+  
+  .nav-items {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-right: 20px;
+  }
+  
+  .nav-items li {
+    margin: 0 15px;
+    width: 75px;
+  }
+  
+  .nav-items li a {
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    font-family: 'Kanit', sans-serif;
+    align-items: center;
+    /* margin-top: 20px; */
+    transition: 0.3s;
+    
+  }
+ 
+  .nav-items li a:hover
+  {
+    box-shadow:
+    inset 0 -0.175em white,
+    inset 0 -0.2em #000;
+  }
+  
+  .get-started {
+
+    margin-top: 0 ;
+    margin-left: 30px;
+  }
+  
+  .get-started button {
+    width: 180px;
+    padding: 4px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    align-items: center;
+    border: none;
+    /* border-radius:20px; */
+    cursor: pointer;
+    color: white;
+    background-color: red;
+  }
+  
+  /* Mobile view styles */
+  @media (max-width: 768px) {
+   
+    .navbar
+    {
+      /* width: 100vw; */
+    }
+    .menu-toggle {
+      display: flex;
+    }
+    .nav-items li a img{
+      margin-left : 25%;
+      margin-right: 5%;
+      /* display: none; */
+    }
+    .nav-items li a {
+      flex-direction: row;
+      justify-content: left;
+      /* align-items: center;       */
+    }
+   
+    .nav-items {
+      display: none;
+      flex-direction: column;
+      background-color: transparent;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      width: 100%;
+      padding: 10px 0;
+      text-align: center;
+    }
+    
+    .nav-items.active {
+      display: flex;
+    }
+    
+    .nav-items li {
+      margin: 10px 0;
+    }
+    
+  }
+    
+/* Navbar.css */
+
+/* Add the following CSS rules to control the visibility of elements */
+
+
+
+/* Show menu items when the navbar is active (open) */
+.navbar.active .nav-items {
+  display: flex;
+  flex-direction: column;
+  background-color: #4c0448;
+  position: absolute;
+  top: 60px;
+  justify-content: center;
+  align-items: center;
+  right: 0;
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  margin-top: 5px;
+}
+
+/* Style for open/close animation of hamburger bars */
+.bar.open:nth-child(1) {
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.bar.open:nth-child(2) {
+  opacity: 0;
+}
+
+.bar.open:nth-child(3) {
+  transform: rotate(45deg) translate(-6px, -7px);
+}
+
+/* Rest of your existing styles... */
+.custom a
+{
+  color:  #4c0448;
+}
+
+
+
+.usericon a
+{
+  
+  color: black;
+}
+
+.usericon 
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 35px;
+  
+}
+.usericon a i
+{
+  color: black;
+  font-size: 30px;
+  margin-bottom: 5px;
+}

@@ -1,0 +1,196 @@
+
+/* Table */
+.styled-table {
+    border-collapse: collapse;
+    /* margin: 25px 0; */
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    /* height: 445px; */
+    width: 720px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.tablediv
+{
+    height: 445px;
+
+}
+
+.styled-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+    height: 41px;
+}
+
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+
+
+.styled-table tbody tr {
+    height: 41px;
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #bb0052;
+}
+
+
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+
+.colflex
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.rowflex
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+.pagination
+{
+    display: flex;
+    width: 100%;
+    margin-top: 12px;
+    /* justify-content: space-around; */
+}
+.pagination li a
+{
+    text-decoration: none;
+    color: white;
+    font-family: ubuntu;
+    font-size: 21px;
+}
+
+.pagination li
+{
+    margin: 0px 18px;
+    list-style: none;
+}
+
+.fa-play
+{
+    font-size: 21px;
+    /* margin-top: 12px; */
+    margin-right: 20px;
+    transform: rotate(180deg);
+    
+}
+
+.active
+{
+    /* background-color: pink; */
+    border: 2px solid white;
+    /* transition: 0.9s; */
+    
+}
+
+.play2
+{
+    margin-left: 20px;
+    margin-top: 5px;
+    transform: rotate(0deg);
+    
+}
+
+
+
+@media (max-width: 768px) 
+{
+    .styled-table
+    {
+        zoom: 0.75;
+    }
+}
+
+
+
+/* Pagination */
+.item {
+    align-items: center;
+    color: #FFF;
+    cursor: pointer;
+    display: flex;
+    font-size: 14px;
+    height: 40px;
+    justify-content: center;
+    width: 40px;
+    border: 1px solid grey;
+    border-radius: 100px;
+    /* padding: 3px; */
+  }
+  
+  .disabled-page {
+    color: #808e9b;
+    /* background-color: gray  ; */
+  }
+  
+  .active {
+    border: solid 0px #fff;
+    background-color: #bb0052;
+    /* border-radius: 40px; */
+    color: #808e9b;
+  }
+  
+  .break-me {
+  }
+  
+  .next {
+    width: 40px;
+  }
+  
+  .pagination {
+    align-items: center;
+    /* background-color: #bb0052; */
+    display: flex;
+    flex-direction: row;
+    /* height: 60px; */
+    justify-content: center;
+    list-style-type: none;
+    position: relative;
+    /* width: 1000px; */
+  }
+  
+  .pagination-page {
+    font-weight: 700;
+  }
+  
+  .previous {
+
+    width: 40px;
+    /* padding: 1px; */
+  }
+
+  .react-date-picker__button__icon
+  {
+      stroke: white;      
+}
+
+.react-date-picker__clear-button
+{
+    display: none!important;
+}
+
+.select-date
+{
+    margin-top: 50px;
+    margin-left: 18px;
+}
+

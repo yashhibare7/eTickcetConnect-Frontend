@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+.admin
+{
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: rgba(0,0,0,0.65) url('../../logos/ConductorBack.png');
+    background-repeat: repeat-y;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    /* background: rgba(0,0,0,0.8) url('../../logos/Homeback.jpg'); */
+    background-blend-mode: darken;
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    background-size: cover;
+}
+
+.admin-icon {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.admin-icon img
+{
+    height: 70px;
+}
+
+.admin-sec
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+}
+.admin-sec button
+{
+    font-weight: bold;
+    background-color: white;
+    padding: 15px;
+    margin-top: 40px;
+    width: 180px;
+    font-family: "Kode Mono", monospace;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    
+}
+.admin-sec input
+{
+    padding: 14px;
+    width: 530px;
+    background-color: transparent;
+    border: 2px dashed white;
+    color: green;
+    font-weight: bold;
+    letter-spacing: 8px;
+}
+
+.admin-sec input::placeholder
+{
+    color: green;
+    font-weight: bold;
+    letter-spacing: 5px;
+    font-family: "Kode Mono", monospace;
+}
+.admin-sec-2 button
+{
+    font-weight: bold;
+    background-color: white;
+    padding: 14px;
+    width: 370px;
+    font-family: "Kode Mono", monospace;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 25px;
+}
+.admin-sec-2
+{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.admin-sec-2 input
+{
+    padding: 14px;
+    width: 370px;
+    margin: 25px;
+    background-color: transparent;
+    border: 2px dashed white;
+    color: white;
+    font-weight: bold;
+}
+
+.admin-sec-2 input::placeholder
+{
+    font-weight: bold;
+    font-family: "Kode Mono", monospace;
+}
+
+
+.adminkey
+{
+    margin: auto;
+    height: 90px;
+    margin: 30px 0;
+}
+.admin h2
+{
+    margin-top: 40px;
+    text-align: center;
+    font-family: "Kode Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}

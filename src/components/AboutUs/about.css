@@ -1,0 +1,203 @@
+/* CSS for About Us Section */
+body {
+    overflow-x: hidden;
+}
+
+.AboutUs{
+  background: rgb(0,0,0,0.65) url('./About-img//AboutUS.png');
+  background-blend-mode: darken;
+
+  min-height: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding-top: 69px;
+  background-position: center;
+  background-size: cover;
+}
+.AboutUs-Container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Container for the left side */
+.AboutUS-Container-left {
+    width: 50%; 
+    padding: 20px; 
+    box-sizing: border-box; 
+    
+}
+
+
+.AboutUS-Container-left h2 {
+    color: #ddd9d9; 
+    text-align: justify;
+    font-family: Garamond, serif;
+}
+
+/* Container for the right side (image) */
+.AboutUS-Container-right {
+    width: 40%; 
+    box-sizing: border-box;
+}
+
+/* Style for the image inside the right container */
+.AboutUS-Container-right img {
+    padding-top: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+    width: 100%; 
+    height: 100%; 
+}
+
+/* Clearfix to handle container alignment within the flex container */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.card-container {
+    margin-top: 40px;
+    margin-left: 10px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    /* You can also use "space-around" or "space-evenly" for different spacing options */
+}
+
+.card {
+    width: 20%; /* Adjust the width as needed */
+    padding: 15px;
+    border: 1px solid #fdfdfd;
+    box-sizing: border-box;
+    border-radius: 20px;
+    text-align: center;
+    font-family: 'Courier New', monospace;
+}
+
+.card h1{
+    color: #bb0052;
+}
+
+.card h2{
+  color: rgb(167, 173, 178);
+}
+
+/* AboutUs.css */
+
+.about-us-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: justify;
+
+  }
+  
+  .section {
+    margin-bottom: 30px;
+  }
+  
+  .about-us-container h1 {
+    color: #cbbcbc;
+    text-align: center;
+  }
+  
+  .section h2 {
+    color: #bb0052;
+    text-align: center;
+  }
+  
+  .section h3 {
+    color: #bb0052;
+    text-align: center;
+  }
+  
+  .section p {
+    color: #aaa5a5;
+    line-height: 1.6;
+    font-size:medium;
+  }
+  
+  /* Add more styling as needed */
+
+
+  .section-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .section-leftside{
+    width: 50%; 
+    padding: 20px; 
+    box-sizing: border-box;
+  }
+
+  .section-rightside{
+    width: 50%;
+    padding: 20px; 
+    box-sizing: border-box;
+  }
+
+  .sub-section-2{
+    padding-top: 110px;
+  }
+
+  .sub-section-11{
+    padding-top: 20px;
+  }
+
+  .section h3{
+    color: rgb(236, 218, 218);
+  }
+
+  /* Mobile View CSS */
+
+/* Adjustments for smaller screens */
+@media only screen and (max-width: 768px) {
+    .AboutUs-Container {
+      flex-direction: column;
+    }
+  
+    .AboutUS-Container-left,
+    .AboutUS-Container-right {
+      width: 100%;
+    }
+  
+    .AboutUS-Container-right img {
+      padding-top: 20px;
+      padding-right: 0;
+      border-radius: 20px;
+    }
+  
+    .card-container {
+      flex-direction: column;
+    }
+  
+    .card {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .about-us-container {
+      padding: 10px;
+    }
+  
+    .section-container {
+      flex-direction: column;
+    }
+  
+    .section-leftside,
+    .section-rightside {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .sub-section-2,
+    .sub-section-11 {
+      padding-top: 20px;
+    }
+  }
+  
+  /* Additional mobile styles as needed */
+  
