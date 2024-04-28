@@ -147,7 +147,7 @@ changecnf('hide')
     Swal.fire({
       title: `Scan The QR`,
       html: `Ticket will genrated from ${source} to ${destination}  Price ${price} = (${price/ticketCount} * ${ticketCount}) <br />This Window Will close in <b></b>`,
-      imageUrl: `https://api.qrserver.com/v1/create-qr-code/?size=225x225&data=upi%3A%2F%2Fpay%3Fpa%3D9322681386%40ybl%26am%3D${price}%26tn%3Dhttps%3A%2F%2Feticket-connect.web.app%2Fticket%2F${verifyID}%26cu%3DINR`,
+      imageUrl: `https://api.qrserver.com/v1/create-qr-code/?size=225x225&data=upi%3A%2F%2Fpay%3Fpa%3Dyashhibare7%40oksbi%26am%3D${price}%26tn%3Dhttps%3A%2F%2Feticket-connect.web.app%2Fticket%2F${verifyID}%26cu%3DINR`,
       imageHeight: 300,
       imageAlt: "A tall image",
       showCancelButton: true,
